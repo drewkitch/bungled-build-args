@@ -1,2 +1,11 @@
-- type: push
-  
+- service: bungled-build-args-a
+  command: cat result.txt
+- service: bungled-build-args-b
+  command: cat result.txt
+- service: bungled-build-args-a
+  type: push
+  encrypted_dockercfg_path: dockercfg.encrypted
+  image_name: dkcodeship/bungled-build-args-x
+- name: read contents
+  service: bungled-build-args-x
+  command: cat result.txt

@@ -1,10 +1,10 @@
 bungled-build-args-a:
   build:
-    context: ./bungled-build-args/
     dockerfile: Dockerfile.a
     encrypted_args_file: service-a-args.encrypted
 bungled-build-args-b:
   build:
-    context: ./bungled-build-args/
     dockerfile: Dockerfile.b
     encrypted_args_file: service-b-args.encrypted
+bungled-build-args-x:
+  image: dkcodeship/bungled-build-args-x
