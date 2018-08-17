@@ -1,11 +1,11 @@
 bungled-build-args-a:
   build:
-    dockerfile: Dockerfile.a
+    dockerfile: Dockerfile
     encrypted_args_file: kentucky-build-arg.encrypted
 
 bungled-build-args-b:
   build:
-    dockerfile: Dockerfile.b
+    dockerfile: Dockerfile
     encrypted_args_file: colorado-build-arg.encrypted
 
 bungled-build-args-x:
