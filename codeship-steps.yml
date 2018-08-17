@@ -1,8 +1,9 @@
-- service: bungled-build-args-a
+- service: kentucky-build-arg
   command: /bin/sh -c "echo Louisville $(cat result.txt)"
-- service: bungled-build-args-b
+- service: colorado-build-arg
   command: /bin/sh -c "echo Louisville $(cat result.txt)"
-- service: bungled-build-args-a
+
+- service: kentucky-build-arg
   type: push
   encrypted_dockercfg_path: dockercfg.encrypted
   image_name: dkcodeship/bungled-build-args-x

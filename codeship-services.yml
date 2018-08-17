@@ -1,9 +1,9 @@
-bungled-build-args-a:
+kentucky-build-arg:
   build:
     dockerfile: Dockerfile
     encrypted_args_file: kentucky-build-arg.encrypted
 
-bungled-build-args-b:
+colorado-build-arg:
   build:
     dockerfile: Dockerfile
     encrypted_args_file: colorado-build-arg.encrypted
