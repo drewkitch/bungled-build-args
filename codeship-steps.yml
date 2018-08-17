@@ -1,11 +1,11 @@
 - service: bungled-build-args-a
-  command: cat result.txt
+  command: /bin/sh -c "echo Louisville $(cat result.txt)"
 - service: bungled-build-args-b
-  command: cat result.txt
+  command: /bin/sh -c "echo Louisville $(cat result.txt)"
 - service: bungled-build-args-a
   type: push
   encrypted_dockercfg_path: dockercfg.encrypted
   image_name: dkcodeship/bungled-build-args-x
 - name: pull image that was just pushed, read contents
   service: bungled-build-args-x
-  command: cat result.txt
+  command: /bin/sh -c "echo Louisville $(cat result.txt)"
