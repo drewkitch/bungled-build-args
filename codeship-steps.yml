@@ -6,6 +6,6 @@
   type: push
   encrypted_dockercfg_path: dockercfg.encrypted
   image_name: dkcodeship/bungled-build-args-x
-- name: read contents
+- name: pull image that was just pushed, read contents
   service: bungled-build-args-x
   command: cat result.txt
